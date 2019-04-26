@@ -1,36 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    
+  <head>
     <title>Erika Cristina Alves Bastos</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-    
-    
-</head>
-<body>
-    <header>
-        <nav id="nav-bar">
-            
-                <a href="http://womakerscode.org/"><img src="images/logo.png" id="womakers-logo"></a>
-                
-                <ul id="menu">
-                    <li><a href="Index.html">HOME</a></li>
-                    <li><a href="#servicos">SERVIÇOS</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#sobre">SOBRE MIM</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
-                </ul>
-            
-        </nav>
-        
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+  </head>
+  <body>
+    <header id="menu-nav">
+      <nav>
+        <a href="http://womakerscode.org/"
+          ><img src="images/logo.png" id="womakers-logo"
+        /></a>
+
+        <ul id="menu">
+          <li><a href="Index.html">HOME</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#sobre">SOBRE MIM</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
     </header>
-    <section>
-        <div id="fotos-slider">
-        
+
+    <div class="efeito"></div>
+
+    <main>
+      <section id="welcome">
+        <div id="slider">
+          <h1>Bem Vind&#64;</h1>
+          <h2>Um subtitulo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore magna aliqua
+          </p>
         </div>
-    </section>
-    
-    
-</body>
+        <!--ver se essa parte muda para outro slide para a direita-->
+      </section>
+
+      <section id="servicos" class="background-black">
+        <header class="borderbottom-white">
+          <h1>Serviços</h1>
+          <p class="text-orange">Aqui entra uma breve explicaçao</p>
+        </header>
+        <div id="div-services">
+          <figure class="servicos-imagens">
+            <img src="images/Service1.png" alt="Websites" />
+            <figcaption>
+              <h1 class="subtitle-font">Websites</h1>
+              <p class="text-white">Aqui entra uma descriçao do serviço</p>
+            </figcaption>
+          </figure>
+          <figure class="servicos-imagens">
+            <img src="images/Service2.png" alt="Templates" />
+            <figcaption>
+              <h1 class="subtitle-font">Templates</h1>
+              <p>Aqui entra uma descriçao do serviço</p>
+            </figcaption>
+          </figure>
+          <figure class="servicos-imagens">
+            <img src="images/Service3.png" alt="Temas Wordpress" />
+            <figcaption>
+              <h1 class="subtitle-font">Temas Wordpress</h1>
+              <p>Aqui entra uma descriçao do serviço</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="efeito"></div>
+
+      <section id="portfolio" class="background-orange">
+        <header class="borderbottom-black">
+          <h1>Meus Trabalhos</h1>
+          <p>Aqui entra um descrição</p>
+        </header>
+
+        <div id="div-portfolio">
+          <ul id="filtro">
+            <li>Tudo</li>
+            <li>Website</li>
+            <li>Template</li>
+            <li>Tema</li>
+          </ul>
+          <figure class="portfolio-imagens" id="portfolioWebsite">
+            <img src="images/Portfolio01.png" alt="Website" />
+            <figcaption>
+              <h1>Thumbnail label</h1>
+              <h2>Thumbnail Caption</h2>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-imagens" id="portfolioTemplate">
+            <img src="images/Portfolio02.png" alt="Template" />
+            <figcaption>
+              <h1>Thumbnail label</h1>
+              <h2>Thumbnail Caption</h2>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-imagens" id="portfolioTema">
+            <img src="images/Portfolio03.png" alt="Tema" />
+            <figcaption>
+              <h1>Thumbnail label</h1>
+              <h2>Thumbnail Caption</h2>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="sobre" class="background-black">
+        <header class="borderbottom-white">
+          <h1>Quem sou eu</h1>
+          <p class="text-orange">Aqui entra um descrição</p>
+        </header>
+        <figure id="perfil">
+          <img src="images/photo.png" alt="Minha foto" />
+          
+          <h1 class="subtitle-font">Joana D'arc</h1>
+          <ul id="redes">
+              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li></li>
+              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-twitter"></i></a></li></li>
+              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-linkedin-in"></i></a></li></li>
+              
+          </ul>
+          </figcaption>
+        </figure>
+        <div id="div-sobre">
+          <h2 class="subtitle-font">Sobre Mim</h2>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore magna aliqua. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore magna aliqua
+          </p>
+        </div>
+        <div id="div-habilidades">
+          <h2 class="subtitle-font left-align">Habilidades</h2>
+          <ul id="habilidades">
+            <li>
+              <progress
+                name="javascript"
+                id="javascript"
+                max="100"
+                value="60"
+                data-label="Java Script"
+              ></progress>
+            </li>
+            <li>
+              <progress
+                name="javascript"
+                id="javascript"
+                max="100"
+                value="60"
+                data-label="Java Script"
+              ></progress>
+            </li>
+            <li>
+              <progress
+                name="javascript"
+                id="javascript"
+                max="100"
+                value="60"
+                data-label="Java Script"
+              ></progress>
+            </li>
+            <li>
+              <progress
+                name="javascript"
+                id="javascript"
+                max="100"
+                value="60"
+                data-label="Java Script"
+              ></progress>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contato" class="background-orange">
+        <header class="borderbottom-black">
+          <h1>Contato</h1>
+          <p>Aqui entra um descrição</p>
+        </header>
+        <div id="div-contato">
+          <address id="emailtelefone">
+            <a id="email" href="mailto:meuemail@mail.com">meuemail@mail.com</a>
+            <p id="telefone">+55 21 99559-8513</p>
+          </div>
+            <h2 class="borderbottom-black">Midias</h2>
+            <ul>
+              <li>
+                <a href="http:/facebook.com"
+                  ><img src="images/facebook.png" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="http:/twitter.com"
+                  ><img src="images/twitter.png" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="http:/linkedin.com"
+                  ><img src="images/linkedin.png" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="http:/pinterest.com"
+                  ><img src="images/pinterest.png" alt="pinterest"
+                /></a>
+              </li>
+              <li>
+                <a href="http:/instagram.com"
+                  ><img src="images/instagram.png" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="http:/github.com"
+                  ><img src="images/github.png" alt="github"
+                /></a>
+              </li>
+            </ul>
+          
+          </address>
+      </section>
+    </main>
+  </body>
 </html>
