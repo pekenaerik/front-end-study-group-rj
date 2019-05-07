@@ -10,6 +10,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script>
+      function myFunction() {
+			document.getElementsByClassName("menu")[0].classList.toggle("responsive");
+		}
+    </script>
+
+
   </head>
   <body>
     <header id="menu-nav">
@@ -18,18 +27,23 @@
           ><img src="images/logo.png" id="womakers-logo"
         /></a>
 
-        <ul id="menu">
+        <ul class="menu">
+          <li class="icon"><!--Inclui o ícone do responsivo na lista-->
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;
+            </a><!--Chama a função javascript no evento click do icon-->
+          </li>
           <li><a href="Index.html">HOME</a></li>
           <li><a href="#servicos">SERVIÇOS</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#sobre">SOBRE MIM</a></li>
           <li><a href="#contato">CONTATO</a></li>
+          
         </ul>
       </nav>
     </header>
-
-    <div class="efeito"></div>
-
+    <div class="container">
+      <div class="efeito"></div>
+    </div>
     <main>
       <section id="welcome">
         <div id="slider">
@@ -82,33 +96,43 @@
         </header>
 
         <div id="div-portfolio">
-          <ul id="filtro">
-            <li>Tudo</li>
-            <li>Website</li>
-            <li>Template</li>
-            <li>Tema</li>
-          </ul>
-          <figure class="portfolio-imagens" id="portfolioWebsite">
+        
+          <section id="filtro">
+            
+            <input type="radio" name="bt" id="bt_tudo">
+            <label for="bt_tudo">Tudo</label>
+            <input type="radio" name="bt" id="bt_website">
+            <label for="bt_website">Website</label>
+            <input type="radio" name="bt" id="bt_template">
+            <label for="bt_template">Template</label>
+            <input type="radio" name="bt" id="bt_tema">
+            <label for="bt_tema">Tema</label>
+          
+
+          <div id="galeria">
+          <figure class="portfolio-imagens website">
             <img src="images/Portfolio01.png" alt="Website" />
             <figcaption>
               <h1>Thumbnail label</h1>
               <h2>Thumbnail Caption</h2>
             </figcaption>
           </figure>
-          <figure class="portfolio-imagens" id="portfolioTemplate">
+          <figure class="portfolio-imagens template">
             <img src="images/Portfolio02.png" alt="Template" />
             <figcaption>
               <h1>Thumbnail label</h1>
               <h2>Thumbnail Caption</h2>
             </figcaption>
           </figure>
-          <figure class="portfolio-imagens" id="portfolioTema">
+          <figure class="portfolio-imagens tema">
             <img src="images/Portfolio03.png" alt="Tema" />
             <figcaption>
               <h1>Thumbnail label</h1>
               <h2>Thumbnail Caption</h2>
             </figcaption>
           </figure>
+          </div>
+        </section>
         </div>
       </section>
 
@@ -118,13 +142,13 @@
           <p class="text-orange">Aqui entra um descrição</p>
         </header>
         <figure id="perfil">
-          <img src="images/photo.png" alt="Minha foto" />
+          <img src="images/photo.jpeg" alt="Minha foto" />
           
-          <h1 class="subtitle-font">Joana D'arc</h1>
+          <h1 class="subtitle-font">Erika Bastos</h1>
           <ul id="redes">
-              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li></li>
-              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-twitter"></i></a></li></li>
-              <li><a class="icones" href="http://www.facebook.com"><i class="fab fa-linkedin-in"></i></a></li></li>
+              <li><a class="icones" href="http://www.facebook.com/pekenaerik"><i class="fab fa-facebook-f"></i></a></li></li>
+              <li><a class="icones" href="http://www.twitter.com/pekenaerik"><i class="fab fa-twitter"></i></a></li></li>
+              <li><a class="icones" href="http://www.linkedin.com/in/erika-bastos-a265b631/"><i class="fab fa-linkedin-in"></i></a></li></li>
               
           </ul>
           </figcaption>
@@ -143,11 +167,20 @@
           <ul id="habilidades">
             <li>
               <progress
-                name="javascript"
-                id="javascript"
+                name="Html5"
+                id="Html5"
+                max="100"
+                value="80"
+                data-label="Html5"
+              ></progress>
+            </li>
+            <li>
+              <progress
+                name="CSS"
+                id="CSS"
                 max="100"
                 value="60"
-                data-label="Java Script"
+                data-label="CSS"
               ></progress>
             </li>
             <li>
@@ -155,26 +188,17 @@
                 name="javascript"
                 id="javascript"
                 max="100"
-                value="60"
-                data-label="Java Script"
+                value="20"
+                data-label="JavaScript"
               ></progress>
             </li>
             <li>
               <progress
-                name="javascript"
-                id="javascript"
+                name="PHP"
+                id="PHP"
                 max="100"
-                value="60"
-                data-label="Java Script"
-              ></progress>
-            </li>
-            <li>
-              <progress
-                name="javascript"
-                id="javascript"
-                max="100"
-                value="60"
-                data-label="Java Script"
+                value="15"
+                data-label="PHP"
               ></progress>
             </li>
           </ul>
@@ -187,45 +211,43 @@
         </header>
         <div id="div-contato">
           <address id="emailtelefone">
-            <a id="email" href="mailto:meuemail@mail.com">meuemail@mail.com</a>
+            <a id="email" href="mailto:eka.alves@gmail.com">eka.alves@gmail.com</a>
             <p id="telefone">+55 21 99559-8513</p>
-          </div>
+        
             <h2 class="borderbottom-black">Midias</h2>
             <ul>
               <li>
-                <a href="http:/facebook.com"
-                  ><img src="images/facebook.png" alt="facebook"
-                /></a>
+                <a href="http://facebook.com/pekenaerik"
+                  ><i class="fab fa-facebook"></i></a>
               </li>
               <li>
-                <a href="http:/twitter.com"
-                  ><img src="images/twitter.png" alt="twitter"
-                /></a>
+                <a href="http://twitter.com/pekenaerik"
+                  ><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="http:/linkedin.com"
-                  ><img src="images/linkedin.png" alt="linkedin"
-                /></a>
+                <a href="http://linkedin.com/in/erika-bastos-a265b631"
+                  ><i class="fab fa-linkedin-in"></i></a>
               </li>
               <li>
-                <a href="http:/pinterest.com"
-                  ><img src="images/pinterest.png" alt="pinterest"
-                /></a>
+                <a href="http://pinterest.com/pekenaerik"
+                  ><i class="fab fa-pinterest-p"></i></a>
               </li>
               <li>
-                <a href="http:/instagram.com"
-                  ><img src="images/instagram.png" alt="instagram"
-                /></a>
+                <a href="http://instagram.com/erikabastosoficial"
+                  ><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a href="http:/github.com"
-                  ><img src="images/github.png" alt="github"
-                /></a>
+                <a href="http://github.com/pekenaerik"
+                  ><i class="fab fa-github"></i></a>
               </li>
             </ul>
           
           </address>
+        </div>
       </section>
     </main>
+    <footer>
+        <p>Women + Tech = &lt;strong&gt;</p>
+      </footer>
   </body>
 </html>
